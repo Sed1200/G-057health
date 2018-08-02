@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#eba1a2a8</color>
+    <color name="colorPrimaryDark">#7c7778</color>
+    <color name="colorAccent">#bf5a35</color>
+<color name="trans">#00000000</color>
+    <color name="darker_gray">#bf5a35</color>
+    <color name="holo_red_dark">#b9b1b0</color>
+    <color name="accent_material_light">#7f8786</color>
+    <color name="blanc">#FFFFFF</color>
+    <color name="black">#120D16</color>
+</resources>

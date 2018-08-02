@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_alignParentLeft="false"
+    android:background="@drawable/fon"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Inscription"
+    tools:layout_alignParentLeft="?android:attr/windowOverscan">
+
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/prenom"
+        android:layout_alignLeft="@+id/prenom"
+        android:layout_alignStart="@+id/prenom"
+        android:ems="15"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:text="Nom "
+        android:textColor="@color/black"
+        android:textSize="16dp" /> />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/ndt"
+        android:layout_alignLeft="@+id/mot_passe"
+        android:layout_alignStart="@+id/mot_passe"
+        android:ems="15"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:text="Prénom"
+        android:textColor="@color/black"
+        android:textSize="16dp" /> />
+
+    <EditText
+        android:id="@+id/mot_passe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ndt"
+        android:layout_centerHorizontal="true"
+        android:ems="15"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+        android:text="Mot de passe"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/Cmot_passe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mot_passe"
+        android:layout_centerHorizontal="true"
+        android:ems="15"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:text="Confirmer   "
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+
+    <Button
+        android:id="@+id/btn_inscription"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/Cmot_passe"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#f27c51"
+        android:text="S'inscrire"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="30dp"
+        android:textColor="@color/blanc"/>
+
+    <EditText
+        android:id="@+id/ndt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:ems="15"
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:text="Numéro de téléphone"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="124dp"
+        android:layout_height="69dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/con"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nom"
+        android:layout_below="@+id/btn_inscription"
+        android:text="Déja inscrit?"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" /> />
+
+</RelativeLayout>
